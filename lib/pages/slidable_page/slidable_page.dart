@@ -41,8 +41,6 @@ class _SlidablePageState extends State<SlidablePage>
               itemCount: 10,
               itemBuilder: (_, index) {
                 return SlidableWidget(
-                  //controller: animationController,
-                  onSlide: () {},
                   child: Container(
                     alignment: Alignment.center,
                     decoration: BoxDecoration(
@@ -72,7 +70,6 @@ class _SlidablePageState extends State<SlidablePage>
               itemBuilder: (_, index) {
                 return SlidableWidget(
                   controller: animationController,
-                  onSlide: () {},
                   child: Container(
                     alignment: Alignment.center,
                     decoration: BoxDecoration(

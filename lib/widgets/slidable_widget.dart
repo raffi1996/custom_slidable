@@ -9,16 +9,13 @@ enum DraggedPosition {
 class SlidableWidget extends StatefulWidget {
   final Widget child;
   final VoidCallback? onSlide;
-  final double actionThreshold;
-  final Widget? backgroundChild;
+
   final AnimationController? controller;
 
   const SlidableWidget({
     Key? key,
     required this.child,
     this.onSlide,
-    this.actionThreshold = 0.1,
-    this.backgroundChild,
     this.controller,
   }) : super(key: key);
 
